@@ -76,7 +76,7 @@ defmodule AzureService.StorageAccount do
 
     case response.status_code do
       201 ->
-        {:ok, full_path}
+        {:ok, url}
 
       _ ->
         IO.puts(response)
